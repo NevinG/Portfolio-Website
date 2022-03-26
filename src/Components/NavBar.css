@@ -1,15 +1,17 @@
 
 .navContainer {
-    background-color: rgb(31, 31, 31);
     width: 100%;
     display: flex;
     justify-content: center;
 }
 
 .navContainer a{
-    text-align: center;
-    text-decoration: none;
-    padding: 14px 16px;
-    font-size: 17px;
+    font-size: 16px;
     color: white;
+    text-align: center;
+    border-radius: 16px;
+    padding: 10px 20px;
+    margin: 4px 2px;
+    background-color: #373A36;
+    text-decoration: none;
 }
