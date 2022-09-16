@@ -14,27 +14,26 @@
   </head>
 
   <body>
-    <nav class="navbar navbar-expand-lg justify-content-center">
-        <a class="navbar-brand text-white mr-5 font-weight-bold" href="#">Nevin Gilday</a>
-        <div class="navbar-nav">
-            <a class="nav-item nav-link text-white" href="#">About</a>
-            <a class="nav-item nav-link text-white" href="#">Skills</a>
-            <a class="nav-item nav-link text-white" href="#">Projects</a>
-            <a class="nav-item nav-link text-white" href="#">Contact</a>
+    <h1 style="text-align: center; color: olivedrab">Website currently under development. Will be complete soon!!!!!</h1>
+    <nav id="nav-menu-div">
+        <a style="font-weight: 700; font-size: 1rem;" href="#">Nevin Gilday &nbsp;|</a>
+        <div id="nav-menu-items"style="display:flex; justify-content: center; flex-wrap: wrap;">
+            <a class="nav-item nav-link text-white" href="#about-section">About</a>
+            <a class="nav-item nav-link text-white" href="#skills-section">Skills</a>
+            <a class="nav-item nav-link text-white" href="#projects-section">Projects</a>
+            <a class="nav-item nav-link text-white" href="#contact-section">Contact</a>
         </div>
     </nav>
 
     <section id="home-section" style="margin-top: 100px">
-        <div class="container">
-            <div class="row d-md-flex no-gutters justify-content-center align-items-center">
-                <div class="text">
-                    <h1 class="mb-4 mt-3 font-weight-bold text-warning"><span>Nevin Gilday</span></h1>
-                    <h3 class="mb-4 text-white">Computer Science Student</h3>
-                    <h5 class="text-white">&nbsp;&nbsp;&nbsp; @ University of Texas at Dallas</h5>
-                </div>
-                <div style="margin-left: 100px">
-                    <img src="./images/Nevin.PNG" width="200px" height="200px" style="border-radius: 50%;">
-                </div>
+        <div style="display: flex; justify-content: center; align-items:center; flex-wrap: wrap">
+            <div style="display:flex; flex-direction: column; justify-content: center; align-items: center;">
+                <h1 class="font-weight-bold text-warning">Nevin Gilday</h1>
+                <h3 class="text-white">Computer Science Student</h3>
+                <h5 class="text-white">@ University of Texas at Dallas</h5>
+            </div>
+            <div style="margin-left: 50px; margin-right: 50px; margin-top: 30px; margin-bottom: 10px">
+                <img src="./images/Nevin.PNG" width="200px" height="200px" style="border-radius: 50%;">
             </div>
         </div>
     </section>	
@@ -43,7 +42,7 @@
         <div class="container">
             <div class="row justify-content-center pb-3">
                 <div class="col-md-12 heading-section text-center">
-                    <h2 class="text-white">Skills</h2>
+                    <h1 class="text-white">Skills</h1>
                 </div>
             </div>
 
@@ -171,30 +170,36 @@
 
     <section id="projects-section" style="margin-top: 100px;">
         <div style="display:flex; justify-content:center">
-            <h2 class="mb-4 text-white">Projects</h2>
+            <h1 class="mb-4 text-white">Projects</h1>
         </div>
         
-        <div class="project">
-            <h2 class="text-warning">Practicetypingcode.com</h1>
-            <img src="./images/practicetypingcode.PNG" width="800px" height="400px" style="margin-top: 10px; margin-bottom: 10px">  
+        <a href="http://www.practicetypingcode.com" target="_blank">
+            <div class="project">
+                
+                <h2 class="text-warning">Practicetypingcode.com</h1>
+                <img src="./images/practicetypingcode.PNG" width="800px" height="400px" style="margin-top: 10px; margin-bottom: 10px">  
                 <p>
                     Have you ever been disappointed that you type code much slower than your regular typing? 
                     Well this is a lightweight typing website where you can practice typing some short code statements in various languages. 
                     It isn't very robust, but a good way to kill time and get better at typing those tricky character so commonly used in coding.
                 </p>
-        </div>
+                
+            </div>
+        </a>
 
-        <div class="project">
-            <h2 class="text-warning">Ishihara Plate Generator</h1>
-            <img src="./images/ishiharaplate.PNG" width="400px" height="400px" style="margin-top: 10px; margin-bottom: 10px">  
-                <p>
-                    I am colorblind and have always been fascinated by the color blind tests. 
-                    One weekend I decided I'd make my own plate generator so I could mess around with the different 
-                    colors and see how my colorblindness operates. I also have experimented with reverse colorblindness 
-                    tests where it is easier for colorblind people to read the number than it is people with normal color vision.
-                </p>
-        </div>
-
+        <a href="https://neving.github.io/ReverseColorBlindTest" target="_blank">
+            <div class="project">
+                <h2 class="text-warning">Ishihara Plate Generator</h1>
+                <img src="./images/ishiharaplate.PNG" width="400px" height="400px" style="margin-top: 10px; margin-bottom: 10px">  
+                    <p>
+                        I am colorblind and have always been fascinated by the color blind tests. 
+                        One weekend I decided I'd make my own plate generator so I could mess around with the different 
+                        colors and see how my colorblindness operates. I also have experimented with reverse colorblindness 
+                        tests where it is easier for colorblind people to read the number than it is people with normal color vision.
+                    </p>
+            </div>
+        </a>
+        
         <div class="project">
             <h2 class="text-warning">Million March Madness Brackets</h1>
             <img src="./images/millionMarchMadnessBrackets.PNG" width="800px" height="400px" style="margin-top: 10px; margin-bottom: 10px">  
@@ -206,16 +211,24 @@
                      get the brackets. I then used HTML, CSS, and JS to make a website that displayed all the results of my brackets.
                 </p>
         </div>
-
-        <div class="project">
-            <h2 class="text-warning">Unity Game Development</h1>
-            <img src="./images/unitGameDevelopment.png" width="600px" height="300px" style="margin-top: 10px; margin-bottom: 10px">  
-                <p>
-                    I have made a dozen games in Unity, and have two games that are free download on itch.io. 
-                </p>
-        </div>
+        <a href="https://immersible.itch.io/" target="_blank">
+            <div class="project">
+                <h2 class="text-warning">Unity Game Development</h1>
+                <img src="./images/unitGameDevelopment.png" width="600px" height="300px" style="margin-top: 10px; margin-bottom: 10px">  
+                    <p>
+                        I have made a dozen games in Unity, and have two games that are free download on itch.io. 
+                    </p>
+            </div>
+        </a>
 
     </section>
+
+    <secton id="contact-section">
+        <h1>Contact</h1>
+        <br>
+        <p style="text-align: center;">Email: nevingilday@gmail.com | nevin.gilday@utdallas.edu</p>
+        <br>
+    </secton>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
