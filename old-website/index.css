@@ -1,0 +1,46 @@
+/* Individual CSS */
+#banner_canvas{
+    z-index: -1;
+}
+
+#banner{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+#left_box, #right_box{
+    height: 100%;
+    width: 50%
+}
+/* General css */
+*{
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+}
+html{
+    height: 100%;
+}
+body{
+    background-color: black;
+    color: white;
+    height: 100%;
+}
+
+
+h1, h2, h3, h4, h5, p{
+    color: white;
+    text-align: center;
+}
+a{
+    color:white;
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: none;
+    color: #DF928E;
+    font-weight: 600;
+}
