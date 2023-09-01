@@ -14,6 +14,20 @@
     transform: translate(-50%, -50%);
     padding: 5px;
 }
+#about-section{
+    width: 40%;
+}
+#about-section > p, #about-section > h1{
+    text-align: left;
+}
+
+#projects-section{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 
 #about-section, #contact-section, #projects-section{
     position: absolute;
@@ -27,7 +41,26 @@
     height: 100%;
     width: 50%
 }
-/* General css */
+
+#projects-heading{
+    padding-right: 20px;
+    margin-bottom: 1rem;
+    padding-left: 20px;
+    text-align: center;
+}
+
+/* Class CSS */
+.project-container{
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+}
+
+.projects-section-text {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+/* General CSS */
 *{
     padding: 0;
     margin: 0;
@@ -42,6 +75,13 @@ body{
     height: 100%;
 }
 
+hr{
+    width: 80%;
+    text-align:left;
+    margin-top:0;
+    margin-bottom: 0;
+    background-color: white;
+}
 
 h1, h2, h3, h4, h5, p{
     color: white;

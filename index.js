@@ -36,26 +36,6 @@ let introductionAnimation = {
             [window.innerWidth / 2 + (introductionDiv.clientWidth / 2),window.innerHeight / 2 + (introductionDiv.clientHeight / 2)],
             [window.innerWidth / 2 - (introductionDiv.clientWidth / 2),window.innerHeight / 2 + (introductionDiv.clientHeight / 2)]
         ],
-        // [
-        //     [window.innerWidth / 2 - (introductionDiv.clientWidth / 2),window.innerHeight / 2 - (introductionDiv.clientHeight / 2)],
-        //     [window.innerWidth / 2 - (introductionDiv.clientWidth / 2),window.innerHeight / 2.5 - (introductionDiv.clientHeight / 2)]
-        // ],
-        // [
-        //     [window.innerWidth / 2 + (introductionDiv.clientWidth / 2),window.innerHeight / 2 - (introductionDiv.clientHeight / 2)],
-        //     [window.innerWidth / 2 + (introductionDiv.clientWidth / 2),window.innerHeight / 2.5 - (introductionDiv.clientHeight / 2)],
-        // ],
-        // [
-        //     [window.innerWidth / 2 - (introductionDiv.clientWidth / 2) - window.innerWidth / 40, window.innerHeight / 2.5 - (introductionDiv.clientHeight / 2)],
-        //     [window.innerWidth / 2 - (introductionDiv.clientWidth / 2), window.innerHeight / 2.5 - (introductionDiv.clientHeight / 2) - window.innerWidth / 40], 
-        //     [window.innerWidth / 2 - (introductionDiv.clientWidth / 2) + window.innerWidth / 40, window.innerHeight / 2.5 - (introductionDiv.clientHeight / 2)],
-        //     [window.innerWidth / 2 - (introductionDiv.clientWidth / 2) - window.innerWidth / 40, window.innerHeight / 2.5 - (introductionDiv.clientHeight / 2)]
-        // ],
-        // [
-        //     [window.innerWidth / 2 + (introductionDiv.clientWidth / 2) - window.innerWidth / 40, window.innerHeight / 2.5 - (introductionDiv.clientHeight / 2)],
-        //     [window.innerWidth / 2 + (introductionDiv.clientWidth / 2), window.innerHeight / 2.5 - (introductionDiv.clientHeight / 2) - window.innerWidth / 40], 
-        //     [window.innerWidth / 2 + (introductionDiv.clientWidth / 2) + window.innerWidth / 40, window.innerHeight / 2.5 - (introductionDiv.clientHeight / 2)],
-        //     [window.innerWidth / 2 + (introductionDiv.clientWidth / 2) - window.innerWidth / 40, window.innerHeight / 2.5 - (introductionDiv.clientHeight / 2)]
-        // ]
     ],
     boidPosition2: [
         [
@@ -65,26 +45,6 @@ let introductionAnimation = {
             [window.innerWidth / 2 + (introductionDiv.clientWidth / 2),window.innerHeight / 4 + (introductionDiv.clientHeight / 2)],
             [window.innerWidth / 2 - (introductionDiv.clientWidth / 2),window.innerHeight / 4 + (introductionDiv.clientHeight / 2)]
         ],
-        // [
-        //     [window.innerWidth / 2 - (introductionDiv.clientWidth / 2),window.innerHeight / 4 - (introductionDiv.clientHeight / 2)],
-        //     [window.innerWidth / 2 - (introductionDiv.clientWidth / 2),window.innerHeight / (20/3) - (introductionDiv.clientHeight / 2)]
-        // ],
-        // [
-        //     [window.innerWidth / 2 + (introductionDiv.clientWidth / 2),window.innerHeight / 4 - (introductionDiv.clientHeight / 2)],
-        //     [window.innerWidth / 2 + (introductionDiv.clientWidth / 2),window.innerHeight / (20/3) - (introductionDiv.clientHeight / 2)],
-        // ],
-        // [
-        //     [window.innerWidth / 2 - (introductionDiv.clientWidth / 2) - window.innerWidth / 40, window.innerHeight / 2.5 - (introductionDiv.clientHeight / 2) - window.innerHeight / 4],
-        //     [window.innerWidth / 2 - (introductionDiv.clientWidth / 2), window.innerHeight / 2.5 - (introductionDiv.clientHeight / 2) - window.innerWidth / 40 - window.innerHeight / 4], 
-        //     [window.innerWidth / 2 - (introductionDiv.clientWidth / 2) + window.innerWidth / 40, window.innerHeight / 2.5 - (introductionDiv.clientHeight / 2) - window.innerHeight / 4],
-        //     [window.innerWidth / 2 - (introductionDiv.clientWidth / 2) - window.innerWidth / 40, window.innerHeight / 2.5 - (introductionDiv.clientHeight / 2) - window.innerHeight / 4]
-        // ],
-        // [
-        //     [window.innerWidth / 2 + (introductionDiv.clientWidth / 2) - window.innerWidth / 40, window.innerHeight / 2.5 - (introductionDiv.clientHeight / 2) - window.innerHeight / 4],
-        //     [window.innerWidth / 2 + (introductionDiv.clientWidth / 2), window.innerHeight / 2.5 - (introductionDiv.clientHeight / 2) - window.innerWidth / 40 - window.innerHeight / 4], 
-        //     [window.innerWidth / 2 + (introductionDiv.clientWidth / 2) + window.innerWidth / 40, window.innerHeight / 2.5 - (introductionDiv.clientHeight / 2) - window.innerHeight / 4],
-        //     [window.innerWidth / 2 + (introductionDiv.clientWidth / 2) - window.innerWidth / 40, window.innerHeight / 2.5 - (introductionDiv.clientHeight / 2) - window.innerHeight / 4]
-        // ]
     ],
 }
 let aboutEnterAnimation = {
@@ -388,9 +348,12 @@ function loop(delta){
         currentlyAnimating = true;
         introductionAnimation.durationElapsed += (delta/60);
 
-        document.getElementById("introduction").style.top = String(50 - introductionAnimation.durationElapsed / introductionAnimation.duration * 25) + "%";
+        document.getElementById("introduction").style.top = String(50 - introductionAnimation.durationElapsed / introductionAnimation.duration * 50) + "%";
+        document.getElementById("introduction").style.transform = `translate(-50%, ${-50 + introductionAnimation.durationElapsed / introductionAnimation.duration * 50}%)`;
+        
         if(introductionAnimation.durationElapsed >= introductionAnimation.duration){
-            document.getElementById("introduction").style.top = "25%";
+            document.getElementById("introduction").style.top = "0%";
+            document.getElementById("introduction").style.transform = "translate(-50%, 0%)";
             introductionAnimation.start = false;
             introductionAnimation.durationElapsed = 0;
             introductionMoved = true;
@@ -401,8 +364,12 @@ function loop(delta){
         aboutEnterAnimation.durationElapsed += (delta/60);
 
         document.getElementById("about-section").style.top = String(110 - aboutEnterAnimation.durationElapsed / aboutEnterAnimation.duration * 60) + "%";
+        document.getElementById("about-section").style.left = String(50 - aboutEnterAnimation.durationElapsed / aboutEnterAnimation.duration * 45) + "%";
+        document.getElementById("about-section").style.transform = `translate(${-50 + aboutEnterAnimation.durationElapsed / aboutEnterAnimation.duration * 50}%, -50%)`;
         if(aboutEnterAnimation.durationElapsed >= aboutEnterAnimation.duration){
             document.getElementById("about-section").style.top = "50%";
+            document.getElementById("about-section").style.left = "5%";
+            document.getElementById("about-section").style.transform = "translate(0%, -50%)";
             aboutEnterAnimation.start = false;
             aboutEnterAnimation.durationElapsed = 0;
         }
@@ -411,10 +378,14 @@ function loop(delta){
         currentlyAnimating = true;
         projectsEnterAnimation.durationElapsed += (delta/60);
 
-        document.getElementById("projects-section").style.top = String(110 - projectsEnterAnimation.durationElapsed / projectsEnterAnimation.duration * 60) + "%";
+        document.getElementById("projects-section").style.top = String(110 - projectsEnterAnimation.durationElapsed / projectsEnterAnimation.duration * 77) + "%";
+        document.getElementById("projects-section").style.left = String(50 - projectsEnterAnimation.durationElapsed / projectsEnterAnimation.duration * 50) + "%";
+        document.getElementById("projects-section").style.transform = `translate(${-50 + projectsEnterAnimation.durationElapsed / projectsEnterAnimation.duration * 50}%, -50%)`;
 
         if(projectsEnterAnimation.durationElapsed >= projectsEnterAnimation.duration){
-            document.getElementById("projects-section").style.top = "50%";
+            document.getElementById("projects-section").style.top = "33%";
+            document.getElementById("projects-section").style.left = "0%";
+            document.getElementById("projects-section").style.transform = "translate(0%, -50%)";
             projectsEnterAnimation.start = false;
             projectsEnterAnimation.durationElapsed = 0;
         }
@@ -479,7 +450,13 @@ addEventListener("mousemove", function(e){
 const about = `
 <div id="about-section">
     <h1>About</h1>
-    <p>some lrandom stuff</p>
+    <p>
+        Hey there, I'm Nevin Gilday, currently in my final two semesters at The University of Texas at Dallas, 
+        working towards my Bachelor of Science in Computer Science, set to graduate in Spring 2024 after 2 years of studying. My journey 
+        into computer science began in the 5th grade with website development. Over the years, my interest has evolved, 
+        and now I'm deeply involved in programming my own AI and machine learning projects. Beyond the digital realm, 
+        I'm a die-hard Liverpool FC supporter, watching soccer has become more of a passion than a pastime for me.
+    </p>
 </div>`
 document.getElementById("about-button").addEventListener('click', function(e) {
     if(currentlyAnimating)
@@ -564,8 +541,29 @@ document.getElementById("about-button").addEventListener('click', function(e) {
 //projects sections
 const projects = `
 <div id="projects-section">
-    <h1>Projects</h1>
-    <p>some lrandom stuff</p>
+    <h1 id="projects-heading">Projects</h1>
+    <hr>
+
+    <div class="project-container">
+      <div>
+        <p class="projects-section-text">Project 1</p>
+      </div>
+      <div>
+        <p class="projects-section-text">Full Stack</p>
+      </div>
+    </div>
+    <hr>
+
+    <div class="project-container">
+      <div>
+        <p class="projects-section-text">Project 1</p>
+      </div>
+      <div>
+        <p class="projects-section-text">Full Stack</p>
+      </div>
+    </div>
+    <hr>
+    
 </div>`
 document.getElementById("projects-button").addEventListener('click', function(e) {
     if(currentlyAnimating)
