@@ -1,0 +1,63 @@
+/* Normal styling */
+body{
+    background-color: black;
+    color: white;
+}
+
+a{
+    color:white;
+    text-decoration: none;
+}
+
+a:hover{
+    text-decoration: none;
+    color: inherit;
+}
+
+.project img {
+    max-width: 100%;
+    height: auto;
+}
+
+.project{
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+#home-section{
+    text-align: center;
+}
+
+.project p{
+    width: 75%;
+    text-align: center;
+}
+
+#contact-section{
+    display:flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+#nav-menu-div{
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+/* Extra small devices styling(phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    #nav-menu-items{
+        flex-direction: column;
+    }
+    #nav-menu-div{
+        flex-direction: column;
+        display: none;
+    }
+}
