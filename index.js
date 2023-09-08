@@ -85,7 +85,7 @@ let contactLeaveAnimation = {
 
 const Graphics = PIXI.Graphics;
 
-const boidCount = 300;
+const boidCount = Math.floor((window.innerHeight * window.innerWidth) * .0003);
 const boids = [];
 const boidAvoidVision = 20; //how much vision each boid has to avoid other boids
 const boidAlignVision = 120;
@@ -559,7 +559,7 @@ const projectSection = `
         <p class="projects-section-text"><a href="#" onclick="selectProject(0)">Abstract Art Generator</a></p>
       </div>
       <div>
-        <p class="projects-section-text">AI/ML</p>
+        <p class="projects-type-text">AI/ML</p>
       </div>
     </div>
     <hr>
@@ -569,7 +569,7 @@ const projectSection = `
         <p class="projects-section-text"><a href="#" onclick="selectProject(1)">Bill Predictor</a></p>
       </div>
       <div>
-        <p class="projects-section-text">AI/ML</p>
+        <p class="projects-type-text">AI/ML</p>
       </div>
     </div>
     <hr>
@@ -579,7 +579,7 @@ const projectSection = `
         <p class="projects-section-text"><a href="#" onclick="selectProject(2)">Poker</a></p>
       </div>
       <div>
-        <p class="projects-section-text">Full Stack</p>
+        <p class="projects-type-text">Full Stack</p>
       </div>
     </div>
     <hr>
@@ -589,7 +589,7 @@ const projectSection = `
         <p class="projects-section-text"><a href="#" onclick="selectProject(3)">Mock Quizlet</a></p>
       </div>
       <div>
-        <p class="projects-section-text">Full Stack</p>
+        <p class="projects-type-text">Full Stack</p>
       </div>
     </div>
     <hr>
@@ -599,7 +599,7 @@ const projectSection = `
         <p class="projects-section-text"><a href="#" onclick="selectProject(4)">March Madness</a></p>
       </div>
       <div>
-        <p class="projects-section-text">Full Stack</p>
+        <p class="projects-type-text">Full Stack</p>
       </div>
     </div>
     <hr>
@@ -609,7 +609,7 @@ const projectSection = `
         <p class="projects-section-text"><a href="#" onclick="selectProject(5)">Coding Typing Test</a></p>
       </div>
       <div>
-        <p class="projects-section-text">Front End</p>
+        <p class="projects-type-text">Front End</p>
       </div>
     </div>
     <hr>
@@ -619,7 +619,7 @@ const projectSection = `
         <p class="projects-section-text"><a href="#" onclick="selectProject(6)">Ishihara Plate Generator</a></p>
       </div>
       <div>
-        <p class="projects-section-text">Front End</p>
+        <p class="projects-type-text">Front End</p>
       </div>
     </div>
     <hr>
@@ -629,7 +629,7 @@ const projectSection = `
         <p class="projects-section-text"><a href="#" onclick="selectProject(7)">Unity Games</a></p>
       </div>
       <div>
-        <p class="projects-section-text">Game Development</p>
+        <p class="projects-type-text">Game Development</p>
       </div>
     </div>
     <hr>
