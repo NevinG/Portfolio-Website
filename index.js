@@ -556,7 +556,17 @@ const projectSection = `
 
     <div class="project-container">
       <div>
-        <p class="projects-section-text"><a href="#" onclick="selectProject(0)">Abstract Art Generator</a></p>
+        <p class="projects-section-text"><a href="#" onclick="selectProject(0)">Amibroke.tech</a></p>
+      </div>
+      <div>
+        <p class="projects-type-text">Web App</p>
+      </div>
+    </div>
+    <hr>
+
+    <div class="project-container">
+      <div>
+        <p class="projects-section-text"><a href="#" onclick="selectProject(1)">Abstract Art Generator</a></p>
       </div>
       <div>
         <p class="projects-type-text">AI/ML</p>
@@ -566,7 +576,7 @@ const projectSection = `
 
     <div class="project-container">
       <div>
-        <p class="projects-section-text"><a href="#" onclick="selectProject(1)">Bill Predictor</a></p>
+        <p class="projects-section-text"><a href="#" onclick="selectProject(2)">Bill Predictor</a></p>
       </div>
       <div>
         <p class="projects-type-text">AI/ML</p>
@@ -576,7 +586,7 @@ const projectSection = `
     
     <div class="project-container">
       <div>
-        <p class="projects-section-text"><a href="#" onclick="selectProject(2)">Poker</a></p>
+        <p class="projects-section-text"><a href="#" onclick="selectProject(3)">Poker</a></p>
       </div>
       <div>
         <p class="projects-type-text">Full Stack</p>
@@ -586,7 +596,7 @@ const projectSection = `
 
     <div class="project-container">
       <div>
-        <p class="projects-section-text"><a href="#" onclick="selectProject(3)">Mock Quizlet</a></p>
+        <p class="projects-section-text"><a href="#" onclick="selectProject(4)">Mock Quizlet</a></p>
       </div>
       <div>
         <p class="projects-type-text">Full Stack</p>
@@ -596,7 +606,7 @@ const projectSection = `
 
     <div class="project-container">
       <div>
-        <p class="projects-section-text"><a href="#" onclick="selectProject(4)">March Madness</a></p>
+        <p class="projects-section-text"><a href="#" onclick="selectProject(5)">March Madness</a></p>
       </div>
       <div>
         <p class="projects-type-text">Full Stack</p>
@@ -606,7 +616,7 @@ const projectSection = `
 
     <div class="project-container">
       <div>
-        <p class="projects-section-text"><a href="#" onclick="selectProject(5)">Coding Typing Test</a></p>
+        <p class="projects-section-text"><a href="#" onclick="selectProject(6)">Coding Typing Test</a></p>
       </div>
       <div>
         <p class="projects-type-text">Front End</p>
@@ -616,7 +626,7 @@ const projectSection = `
 
     <div class="project-container">
       <div>
-        <p class="projects-section-text"><a href="#" onclick="selectProject(6)">Ishihara Plate Generator</a></p>
+        <p class="projects-section-text"><a href="#" onclick="selectProject(7)">Ishihara Plate Generator</a></p>
       </div>
       <div>
         <p class="projects-type-text">Front End</p>
@@ -626,7 +636,7 @@ const projectSection = `
     
     <div class="project-container">
       <div>
-        <p class="projects-section-text"><a href="#" onclick="selectProject(7)">Unity Games</a></p>
+        <p class="projects-section-text"><a href="#" onclick="selectProject(8)">Unity Games</a></p>
       </div>
       <div>
         <p class="projects-type-text">Game Development</p>

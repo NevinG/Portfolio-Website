@@ -1,5 +1,28 @@
 const projects = [];
 
+const amibroketech = `
+<div class="project" id="current-project">
+    <h1 class="project-title">Amibroke.tech</h1>
+    <div style="display: flex;">
+        <div class="project-technology"style="margin-left: 0;">Svelte</div>
+        <div class="project-technology">Flask</div>
+        <div class="project-technology">Google Cloud Run</div>
+    </div>
+    <p class="project-text">
+        This was a project for HackTX 2023. It is a net worth calculator that uses the value of assets rather than the totals in 
+        your back account. My inspiration came from the fact that I couldn't find a tool that allowed me to view my net worth that
+        included things like my phone, laptop, desktop computer, clothes, etc. So we decided to make it ourselves.
+        <br/> 
+        <a target="_blank" class="link_to_new_tab" href="https://www.amibroke.tech"><u>View Project</u></a>
+        &nbsp;
+        <a target="_blank" class="link_to_new_tab" href="https://devpost.com/software/we-dont-have-a-project-name-yet"><u>View Devpost</u></a>
+        &nbsp;
+        <a target="_blank" class="link_to_new_tab" href="https://github.com/md-y/hacktx-2023"><u>View Github</u></a>
+    </p>
+</div>
+`;
+projects.push(amibroketech);
+
 const abstractArtGenerator =`
 <div class="project" id="current-project">
     <h1 class="project-title">Art Generator</h1>
