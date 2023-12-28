@@ -1,5 +1,27 @@
 const projects = [];
 
+const basketballPredictor = `
+<div class="project" id="current-project">
+    <h1 class="project-title">NBA Game Predictor</h1>
+    <div style="display: flex;">
+        <div class="project-technology"style="margin-left: 0;">Python</div>
+        <div class="project-technology">Github Actions</div>
+    </div>
+    <p class="project-text">
+        This was a project for The University of Texas at Dallas's (UTD) Artifical Intelligence Society's (AIS) Artificial Intelligence Mentorship Program (AIM).
+        This was my second time being a mentor in AIM, where I mentored six students their one of their first AI/ML projects. We made a model that uses NBA game data
+        to predict which team is most likely to win a prospective match. The data is updated daily throuh the use of a data scraper running daily through Github Actions.
+        <br/> 
+        <a target="_blank" class="link_to_new_tab" href="https://neving.github.io/AIM-F23-Basketball-Predictor/"><u>View Project</u></a>
+        &nbsp;
+        <a target="_blank" class="link_to_new_tab" href="https://github.com/NevinG/AIM-F23-Basketball-Predictor"><u>View Github</u></a>
+        &nbsp;
+        <a target="_blank" class="link_to_new_tab" href="https://drive.google.com/file/d/166JPKS755kn9-uqLeLc9exirW2Yz9HZD/view?usp=sharing"><u>View Presentation</u></a>
+    </p>
+</div>
+`;
+projects.push(basketballPredictor);
+
 const amibroketech = `
 <div class="project" id="current-project">
     <h1 class="project-title">Amibroke.tech</h1>
