@@ -549,112 +549,27 @@ document.getElementById("about-button").addEventListener('click', function(e) {
 });
 
 //projects sections
-const projectSection = `
+let projectSection = `
 <div id="projects-section">
     <h1 id="projects-heading">Projects</h1>
-    <hr>
+    <hr>`;
 
-    <div class="project-container">
-      <div>
-        <p class="projects-section-text"><a href="#" onclick="selectProject(0)">NBA Game Predictor</a></p>
-      </div>
-      <div>
-        <p class="projects-type-text">Fullstack AI/ML</p>
-      </div>
-    </div>
-    <hr>
+for(let i = 0; i < projects.length; i++){
+    projectSection += `
+        <div class="project-container">
+            <div>
+                <p class="projects-section-text"><a href="#" onclick="selectProject(${i})">${projects[i].projectName}</a></p>
+            </div>
+            <div>
+                <p class="projects-type-text">${projects[i].projectType}</p>
+            </div>
+        </div>
+        <hr>
+    `
+}
 
-    <div class="project-container">
-      <div>
-        <p class="projects-section-text"><a href="#" onclick="selectProject(1)">Amibroke.tech</a></p>
-      </div>
-      <div>
-        <p class="projects-type-text">Web App</p>
-      </div>
-    </div>
-    <hr>
+projectSection += "</div>";
 
-    <div class="project-container">
-      <div>
-        <p class="projects-section-text"><a href="#" onclick="selectProject(2)">Abstract Art Generator</a></p>
-      </div>
-      <div>
-        <p class="projects-type-text">AI/ML</p>
-      </div>
-    </div>
-    <hr>
-
-    <div class="project-container">
-      <div>
-        <p class="projects-section-text"><a href="#" onclick="selectProject(3)">Bill Predictor</a></p>
-      </div>
-      <div>
-        <p class="projects-type-text">AI/ML</p>
-      </div>
-    </div>
-    <hr>
-    
-    <div class="project-container">
-      <div>
-        <p class="projects-section-text"><a href="#" onclick="selectProject(4)">Poker</a></p>
-      </div>
-      <div>
-        <p class="projects-type-text">Full Stack</p>
-      </div>
-    </div>
-    <hr>
-
-    <div class="project-container">
-      <div>
-        <p class="projects-section-text"><a href="#" onclick="selectProject(5)">Mock Quizlet</a></p>
-      </div>
-      <div>
-        <p class="projects-type-text">Full Stack</p>
-      </div>
-    </div>
-    <hr>
-
-    <div class="project-container">
-      <div>
-        <p class="projects-section-text"><a href="#" onclick="selectProject(6)">March Madness</a></p>
-      </div>
-      <div>
-        <p class="projects-type-text">Full Stack</p>
-      </div>
-    </div>
-    <hr>
-
-    <div class="project-container">
-      <div>
-        <p class="projects-section-text"><a href="#" onclick="selectProject(7)">Coding Typing Test</a></p>
-      </div>
-      <div>
-        <p class="projects-type-text">Front End</p>
-      </div>
-    </div>
-    <hr>
-
-    <div class="project-container">
-      <div>
-        <p class="projects-section-text"><a href="#" onclick="selectProject(8)">Ishihara Plate Generator</a></p>
-      </div>
-      <div>
-        <p class="projects-type-text">Front End</p>
-      </div>
-    </div>
-    <hr>
-    
-    <div class="project-container">
-      <div>
-        <p class="projects-section-text"><a href="#" onclick="selectProject(9)">Unity Games</a></p>
-      </div>
-      <div>
-        <p class="projects-type-text">Game Development</p>
-      </div>
-    </div>
-    <hr>
-
-</div>`
 document.getElementById("projects-button").addEventListener('click', function(e) {
     if(currentlyAnimating)
         return;
@@ -673,7 +588,7 @@ document.getElementById("projects-button").addEventListener('click', function(e)
 	document.body.appendChild(element);
 
     let element2 = document.createElement('div');
-	element2.innerHTML = projects[selectedProject];
+	element2.innerHTML = projects[selectedProject].projectHTML;
     element2 = element2.children[0];
 	document.body.appendChild(element2);
 
@@ -906,7 +821,7 @@ function selectProject(i){
     selectedProject = i;
 
     element = document.createElement('div');
-	element.innerHTML = projects[selectedProject];
+	element.innerHTML = projects[selectedProject].projectHTML;
     element = element.children[0];
 	document.getElementById("current-project").innerHTML = element.innerHTML;
 }
