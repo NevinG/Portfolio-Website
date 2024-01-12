@@ -1,10 +1,10 @@
 const projects = [
     {
-        projectName: "2024 Weekly Games (1 Game)",
+        projectName: "2024 Weekly Games (2 Games)",
         projectType: "Web Dev",
         projectHTML: `
         <div class="project" id="current-project">
-            <h1 class="project-title">2024 Weekly Games (1 Game)</h1>
+            <h1 class="project-title">2024 Weekly Games (2 Games)</h1>
             <div style="display: flex;">
                 <div class="project-technology"style="margin-left: 0;">HTML</div>
                 <div class="project-technology">CSS</div>
@@ -13,10 +13,16 @@ const projects = [
             <p class="project-text">
                 I've made a goal to create a small little web game for each week of 2024. I will update all the games here.
                 <br/> 
+
                 <br/> 
                 <span>Week #1 (01/01-01/06): Aim Trainer - </span>
                 <a target="_blank" class="link_to_new_tab" href="https://neving.github.io/AimTrainer/"><u>View Project</u></a>
                 <a target="_blank" class="link_to_new_tab" href="https://github.com/NevinG/AimTrainer"><u>View Github</u></a>
+
+                <br/> 
+                <span>Week #2 (01/07-01/13): Typing Endurance Test - </span>
+                <a target="_blank" class="link_to_new_tab" href="https://neving.github.io/Typing-Endurance-Test/"><u>View Project</u></a>
+                <a target="_blank" class="link_to_new_tab" href="https://github.com/NevinG/Typing-Endurance-Test"><u>View Github</u></a>
             </p>
         </div>
         `
