@@ -23,6 +23,11 @@ const projects = [
                 <span>Week #2 (01/07-01/13): Typing Endurance Test - </span>
                 <a target="_blank" class="link_to_new_tab" href="https://neving.github.io/Typing-Endurance-Test/"><u>View Project</u></a>
                 <a target="_blank" class="link_to_new_tab" href="https://github.com/NevinG/Typing-Endurance-Test"><u>View Github</u></a>
+
+                <br/> 
+                <span>Week #3 (01/14-01/20): Shape Drawing Test - </span>
+                <a target="_blank" class="link_to_new_tab" href="https://neving.github.io/Draw-A-Shape/"><u>View Project</u></a>
+                <a target="_blank" class="link_to_new_tab" href="https://github.com/NevinG/Draw-A-Shape"><u>View Github</u></a>
             </p>
         </div>
         `
