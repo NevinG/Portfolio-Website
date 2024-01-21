@@ -1,6 +1,31 @@
 const projects = [
     {
-        projectName: "2024 Weekly Games (2 Games)",
+        projectName: "Goal Tracker",
+        projectType: "Web Dev",
+        projectHTML: `
+        <div class="project" id="current-project">
+            <h1 class="project-title">Goal Tracker</h1>
+            <div style="display: flex;">
+                <div class="project-technology"style="margin-left: 0;">HTML</div>
+                <div class="project-technology">CSS</div>
+                <div class="project-technology">JavaScript</div>
+                <div class="project-technology">Firestore</div>
+                <div class="project-technology">Firebase</div>
+            </div>
+            <p class="project-text">
+                Everyone makes new year resolutions, but it's hard to stick to them if you don't have a way to track your progress. This goal tracker lets you track
+                daily, weekly, monthly, and year long goals all in one convenient web app. You can sign in with google to track you goals across multiple
+                accounts, and all the data is saved in a google firestore database.
+                <br/> 
+                <a target="_blank" class="link_to_new_tab" href="https://neving.github.io/New-Years-Resolution-Tracker/"><u>View Project</u></a>
+                &nbsp;
+                <a target="_blank" class="link_to_new_tab" href="https://github.com/NevinG/New-Years-Resolution-Tracker"><u>View Github</u></a>
+            </p>
+        </div>
+        `
+    },
+    {
+        projectName: "2024 Weekly Games (3 Games)",
         projectType: "Web Dev",
         projectHTML: `
         <div class="project" id="current-project">
