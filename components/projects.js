@@ -25,11 +25,11 @@ const projects = [
         `
     },
     {
-        projectName: "2024 Weekly Games (3 Games)",
+        projectName: "2024 Weekly Games (4 Games)",
         projectType: "Web Dev",
         projectHTML: `
         <div class="project" id="current-project">
-            <h1 class="project-title">2024 Weekly Games (2 Games)</h1>
+            <h1 class="project-title">2024 Weekly Games (4 Games)</h1>
             <div style="display: flex;">
                 <div class="project-technology"style="margin-left: 0;">HTML</div>
                 <div class="project-technology">CSS</div>
@@ -53,6 +53,11 @@ const projects = [
                 <span>Week #3 (01/14-01/20): Shape Drawing Test - </span>
                 <a target="_blank" class="link_to_new_tab" href="https://neving.github.io/Draw-A-Shape/"><u>View Project</u></a>
                 <a target="_blank" class="link_to_new_tab" href="https://github.com/NevinG/Draw-A-Shape"><u>View Github</u></a>
+
+                <br/> 
+                <span>Week #4 (01/21-01/27): Quick Follow The Instructions - </span>
+                <a target="_blank" class="link_to_new_tab" href="https://neving.github.io/Quick-Follow-The-Instructions/"><u>View Project</u></a>
+                <a target="_blank" class="link_to_new_tab" href="https://github.com/NevinG/Quick-Follow-The-Instructions"><u>View Github</u></a>
             </p>
         </div>
         `
