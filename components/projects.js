@@ -16,7 +16,7 @@ const projects = [
                 Everyone makes new year resolutions, but it's hard to stick to them if you don't have a way to track your progress. This goal tracker lets you track
                 daily, weekly, monthly, and year long goals all in one convenient web app. You can sign in with google to track you goals across multiple
                 accounts, and all the data is saved in a google firestore database.
-                <br/> 
+                <br> 
                 <a target="_blank" class="link_to_new_tab" href="https://neving.github.io/New-Years-Resolution-Tracker/"><u>View Project</u></a>
                 &nbsp;
                 <a target="_blank" class="link_to_new_tab" href="https://github.com/NevinG/New-Years-Resolution-Tracker"><u>View Github</u></a>
@@ -25,11 +25,11 @@ const projects = [
         `
     },
     {
-        projectName: "2024 Weekly Games (4 Games)",
+        projectName: "Nevin.fun (5 Games)",
         projectType: "Web Dev",
         projectHTML: `
         <div class="project" id="current-project">
-            <h1 class="project-title">2024 Weekly Games (4 Games)</h1>
+            <h1 class="project-title">Nevin.fun (5 Games)</h1>
             <div style="display: flex;">
                 <div class="project-technology"style="margin-left: 0;">HTML</div>
                 <div class="project-technology">CSS</div>
@@ -37,27 +37,29 @@ const projects = [
             </div>
             <p class="project-text">
                 I've made a goal to create a small little web game for each week of 2024. I will update all the games here.
-                <br/> 
+                <br>
+                <a target="_blank" class="link_to_new_tab" href="https://github.com/NevinG/nevin.fun"><u>View Github</u></a>
+                <br>
 
-                <br/> 
+                <br> 
                 <span>Week #1 (01/01-01/06): Aim Trainer - </span>
-                <a target="_blank" class="link_to_new_tab" href="https://neving.github.io/AimTrainer/"><u>View Project</u></a>
-                <a target="_blank" class="link_to_new_tab" href="https://github.com/NevinG/AimTrainer"><u>View Github</u></a>
+                <a target="_blank" class="link_to_new_tab" href="https://nevin.fun/aim-trainer/"><u>View Project</u></a>
 
-                <br/> 
+                <br> 
                 <span>Week #2 (01/07-01/13): Typing Endurance Test - </span>
-                <a target="_blank" class="link_to_new_tab" href="https://neving.github.io/Typing-Endurance-Test/"><u>View Project</u></a>
-                <a target="_blank" class="link_to_new_tab" href="https://github.com/NevinG/Typing-Endurance-Test"><u>View Github</u></a>
+                <a target="_blank" class="link_to_new_tab" href="https://nevin.fun/typing-endurance-test/"><u>View Project</u></a>
 
-                <br/> 
-                <span>Week #3 (01/14-01/20): Shape Drawing Test - </span>
-                <a target="_blank" class="link_to_new_tab" href="https://neving.github.io/Draw-A-Shape/"><u>View Project</u></a>
-                <a target="_blank" class="link_to_new_tab" href="https://github.com/NevinG/Draw-A-Shape"><u>View Github</u></a>
+                <br> 
+                <span>Week #3 (01/14-01/20): Draw A Shape - </span>
+                <a target="_blank" class="link_to_new_tab" href="https://nevin.fun/draw-a-shape/"><u>View Project</u></a>
 
-                <br/> 
+                <br> 
                 <span>Week #4 (01/21-01/27): Quick Follow The Instructions - </span>
-                <a target="_blank" class="link_to_new_tab" href="https://neving.github.io/Quick-Follow-The-Instructions/"><u>View Project</u></a>
-                <a target="_blank" class="link_to_new_tab" href="https://github.com/NevinG/Quick-Follow-The-Instructions"><u>View Github</u></a>
+                <a target="_blank" class="link_to_new_tab" href="https://nevin.fun/follow-the-instructions/"><u>View Project</u></a>
+
+                <br> 
+                <span>Week #5 (01/28-02/03): Platform Jump - </span>
+                <a target="_blank" class="link_to_new_tab" href="https://nevin.fun/platform-jump/"><u>View Project</u></a>
             </p>
         </div>
         `
@@ -76,7 +78,7 @@ const projects = [
                 This was a project for The University of Texas at Dallas's (UTD) Artifical Intelligence Society's (AIS) Artificial Intelligence Mentorship Program (AIM).
                 This was my second time being a mentor in AIM, where I mentored six students their one of their first AI/ML projects. We made a model that uses NBA game data
                 to predict which team is most likely to win a prospective match. The data is updated daily throuh the use of a data scraper running daily through Github Actions.
-                <br/> 
+                <br> 
                 <a target="_blank" class="link_to_new_tab" href="https://neving.github.io/AIM-F23-Basketball-Predictor/"><u>View Project</u></a>
                 &nbsp;
                 <a target="_blank" class="link_to_new_tab" href="https://github.com/NevinG/AIM-F23-Basketball-Predictor"><u>View Github</u></a>
@@ -101,7 +103,7 @@ const projects = [
                 This was a project for HackTX 2023. It is a net worth calculator that uses the value of assets rather than the totals in 
                 your back account. My inspiration came from the fact that I couldn't find a tool that allowed me to view my net worth that
                 included things like my phone, laptop, desktop computer, clothes, etc. So we decided to make it ourselves.
-                <br/> 
+                <br> 
                 <a target="_blank" class="link_to_new_tab" href="https://www.amibroke.tech"><u>View Project</u></a>
                 &nbsp;
                 <a target="_blank" class="link_to_new_tab" href="https://devpost.com/software/we-dont-have-a-project-name-yet"><u>View Devpost</u></a>
