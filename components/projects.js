@@ -25,11 +25,11 @@ const projects = [
         `
     },
     {
-        projectName: "Nevin.fun (7 Games)",
+        projectName: "Nevin.fun (8 Games)",
         projectType: "Web Dev",
         projectHTML: `
         <div class="project" id="current-project">
-            <h1 class="project-title">Nevin.fun (7 Games)</h1>
+            <h1 class="project-title">Nevin.fun (8 Games)</h1>
             <div style="display: flex;">
                 <div class="project-technology"style="margin-left: 0;">HTML</div>
                 <div class="project-technology">CSS</div>
@@ -68,6 +68,10 @@ const projects = [
                 <br> 
                 <span>Week #7 (02/11-02/17): Reaction Speed Test - </span>
                 <a target="_blank" class="link_to_new_tab" href="https://nevin.fun/reaction-speed-test/"><u>View Project</u></a>
+
+                <br> 
+                <span>Week #8 (02/18-02/24): Eat The Dots - </span>
+                <a target="_blank" class="link_to_new_tab" href="https://nevin.fun/eat-the-dots/"><u>View Project</u></a>
             </p>
         </div>
         `
