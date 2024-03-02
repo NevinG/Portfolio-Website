@@ -72,6 +72,10 @@ const projects = [
                 <br> 
                 <span>Week #8 (02/18-02/24): Eat The Dots - </span>
                 <a target="_blank" class="link_to_new_tab" href="https://nevin.fun/eat-the-dots/"><u>View Project</u></a>
+
+                <br> 
+                <span>Week #9 (02/25-03/02): Planet Jumper- </span>
+                <a target="_blank" class="link_to_new_tab" href="https://nevin.fun/planet-jumper/"><u>View Project</u></a>
             </p>
         </div>
         `
